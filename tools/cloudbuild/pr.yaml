@@ -1,3 +1,4 @@
+steps:
   # Deploy to Cloud Run
   - name: google/cloud-sdk
     args: ['gcloud', 'run', 'deploy', 'helloworld-${SHORT_SHA}', 
