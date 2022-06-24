@@ -1,0 +1,6 @@
+  # Deploy to Cloud Run
+  - name: google/cloud-sdk
+    args: ['gcloud', 'run', 'deploy', 'helloworld-${SHORT_SHA}', 
+           '--image=gcr.io/cloudrun/hello', 
+           '--region', 'us-central1', '--platform', 'managed', 
+           '--allow-unauthenticated']
