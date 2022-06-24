@@ -7,7 +7,7 @@ steps:
   #          '--allow-unauthenticated']
 
   - name: 'ubuntu'
-    args: ['echo',$_HEAD_BRANCH]
+    args: ['echo',$SHORT_SHA]
 
   - name: 'ubuntu'
     args: ['printenv']
