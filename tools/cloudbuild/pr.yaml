@@ -18,5 +18,5 @@ steps:
     args:
     - '-c'
     - | 
-      pwd && ls -alh && git status
+      pwd && ls -alh && git status && git log
     
