@@ -5,6 +5,8 @@ steps:
   #          '--image=gcr.io/cloudrun/hello', 
   #          '--region', 'us-central1', '--platform', 'managed', 
   #          '--allow-unauthenticated']
+  - name: gcr.io/cloud-builders/git
+    args: ['fetch', '--unshallow']
 
   - name: 'ubuntu'
     args: ['echo',$SHORT_SHA]
