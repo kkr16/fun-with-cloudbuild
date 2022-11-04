@@ -13,10 +13,10 @@ steps:
     args: ['printenv']
     
   - id: git-test
-    name: 'ubuntu'
+    name: gcr.io/cloud-builders/git	
     entrypoint: /bin/bash
     args:
     - '-c'
     - | 
-      pwd && ls -alh && git status
+      pwd && ls -alh && git status && git log
     
