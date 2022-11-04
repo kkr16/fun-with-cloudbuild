@@ -11,3 +11,12 @@ steps:
 
   - name: 'ubuntu'
     args: ['printenv']
+    
+  - id: git-test
+    name: 'ubuntu'
+    entrypoint: /bin/bash
+    args:
+    - '-c'
+    - | 
+      pwd && ls -alh && git status
+    
